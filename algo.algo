@@ -1,0 +1,22 @@
+ALGORITHM sentence_lentgh
+VAR
+STRING : str = "welcome to my world.";
+count : INTEGER = 0;
+nbr_vowels = 0;
+nbr_carac = 0;
+nbr_words = 1;
+BEGIN
+nbr_carac:=str.lentgh()
+FOR i FROM 1 TO str.lentgh   DO
+ IF (str[i] = "a" or "i"or"e" or "y" or "u" or "o") THEN
+nbr_vowels = nbr_vowels + 1
+IF (str[i]=" " ) THEN
+    nbr_words= nbr_words + 1
+
+
+END_IF
+END_FOR
+END
+Write ("nbr_vowels", nbr_vowels)
+Write ("nbr_carac" ,nbr_carac)
+Write ("nbr_words",nbr_words)
